@@ -1,0 +1,5 @@
+{
+  "extends": "@dash/tsconfig/react-library.json",
+  "include": [".", "../dash-utils/src/utils"],
+  "exclude": ["dist", "build", "node_modules"]
+}

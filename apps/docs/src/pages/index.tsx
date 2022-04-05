@@ -1,14 +1,14 @@
-import { Button } from "@acme/core";
-import { useIsomorphicLayoutEffect } from "@acme/utils";
+import { Button } from "@dash/core";
+import { useIsomorphicLayoutEffect } from "@dash/utils";
 
 export default function Docs() {
   useIsomorphicLayoutEffect(() => {
-    console.log("Acme docs page");
+    console.log("dash docs page");
   }, []);
   return (
     <div>
-      <h1>Acme Documentation</h1>
-      <Button>Click me</Button>
+      <h1>dash Documentation</h1>
+      <Button>Click me!</Button>
     </div>
   );
 }

@@ -1,0 +1,114 @@
+@import "../../../../styles/variable.scss";
+
+.example {
+  background-color: aquamarine;
+}
+.logoSection {
+  text-align: center;
+  padding: 20px 40px 10px 40px;
+  width: calc($sidebar-width + 10px);
+  //     width: 25%;
+  //   height: 25vh; // experiment with this value, try changing to 110vh
+  //   min-height: 200px;
+  overflow: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 1;
+}
+.sideNavWidth {
+  width: calc($sidebar-width + 30px);
+}
+
+.sidemenu {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  font-family: "DM Sans", sans-serif;
+  li {
+    list-style: none;
+    &::marker {
+      display: none;
+    }
+    a {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 8px 16px;
+      margin: 0px 0px 8px 0px;
+      // border-radius: 10px;
+      text-decoration: none;
+      position: relative;
+      color: #A098AE;
+      .menuIcon {
+        width: 40px;
+
+        svg {
+          color: rgba(0, 0, 0, 0.54);
+          width: 20px;
+          height: 30px;
+        }
+      }
+      .arrowClass {
+        color: rgba(0, 0, 0, 0.3);
+        position: absolute;
+        right: 25px;
+      }
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.08);
+        color: rgba(0, 0, 0, 0.8);
+      }
+      &.active {
+        background-color: rgba($primary-color,0.1);
+        color: $primary-color;
+        .menuIcon {
+          svg {
+            color: $primary-color;
+          }
+        }
+        div.active svg {    
+          transform: rotate(90deg);
+          // color: $sub-background;
+          color: $primary-color;
+        }
+      }
+    }
+
+    ul {
+      padding: 0px;
+      display: none;
+    }
+
+    .dropdown {
+      // padding: 0px 10px;
+      display: block;
+
+      li {
+        // font-size: small;
+        border-radius: 10px;
+        padding: 0;
+        margin: 0px;
+        // margin-left: 10px;
+        a {
+          padding: 8px 16px;
+          svg {
+            width: 16px;
+            height: 16px;
+          }
+          .menuIcon {
+            width: 25px;
+          }
+          &.active {
+            background-color: rgba(0, 0, 0, 0.0);
+            color: rgba(0, 0, 0, 0.8);
+            border-left: 5px solid $primary-color;
+            svg {
+              color: rgba(0, 0, 0, 0.8);
+            }
+          }
+        }
+      }
+    }
+  }
+}
