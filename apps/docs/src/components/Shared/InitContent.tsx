@@ -1,6 +1,6 @@
-import Box from "@ui/Box/Box";
-import Spacer from "@ui/Spacer/Spacer";
-import Text from "@ui/Text/Text";
+import Box from "../../Box/Box";
+import Spacer from "../../Spacer/Spacer";
+import Text from "../../Text/Text";
 import DisplayCode from "components/DisplayCode";
 import React from "react";
 import { Showcase } from "./Showcase.styles";

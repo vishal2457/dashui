@@ -1,4 +1,4 @@
-import { styled, VariantProps } from "../theme/stitches.config";
+import { styled, VariantProps } from "../..theme/stitches.config";
 import * as RadioGroupPrimitive from "@radix-ui/react-radio-group";
 
 const StyledRadio = styled(RadioGroupPrimitive.Item, {

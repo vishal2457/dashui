@@ -1,20 +1,22 @@
 import React from 'react'
 import { SingleItemType } from './Dropdown'
-import { DropdownMenuItem } from './Dropdown.styles'
+import { DropdownMenuItem, RightSlot } from './Dropdown.styles'
 
 type SingleItemProps = {
     item: SingleItemType,
-    onSelect: (id: string | number, index: number) => void
+    onSelect: (item: SingleItemType, index: number) => void
     index: number
 }
+
+
 
 function SingleItem({item, onSelect, index}: SingleItemProps) {
   return (
     <DropdownMenuItem
     key={item.name}
-    onClick={() => onSelect(item.id, index)}
+    onClick={() => onSelect(item, index)}
   >
-    {item.name}
+    {item.name} {item.icon ? <RightSlot>{item.icon}</RightSlot> : null}
   </DropdownMenuItem>
   )
 }

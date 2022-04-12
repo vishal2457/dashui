@@ -9,7 +9,7 @@ import {
   ParentContainer,
   ParentElement,
 } from "./Sidebar.styles";
-import Text from "@ui/Text/Text";
+import Text from "../../Text/Text";
 import { ArrowDownIcon } from "@radix-ui/react-icons";
 
 

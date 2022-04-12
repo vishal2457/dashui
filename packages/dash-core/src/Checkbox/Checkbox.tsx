@@ -1,4 +1,4 @@
-import { useId } from "@dash/utils";
+import { useId } from "../../utils/hooks/useId";
 import React from "react";
 import Box from "../Box/Box";
 import Label from "../Label/Label";

@@ -1,5 +1,5 @@
 import React from 'react'
-import { TabsList, TabsTrigger } from "@ui/Tabs";
+import { TabsList, TabsTrigger } from "../../Tabs";
 
 function CustomTabList() {
   return (

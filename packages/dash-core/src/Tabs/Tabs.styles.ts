@@ -1,6 +1,6 @@
 import { violet, mauve, blackA } from '@radix-ui/colors';
 import * as TabsPrimitive from '@radix-ui/react-tabs';
-import { styled } from '../theme/stitches.config';
+import { styled } from '../..theme/stitches.config';
 
 const StyledTabs = styled(TabsPrimitive.Root, {
   display: 'flex',

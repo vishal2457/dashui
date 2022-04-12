@@ -1,10 +1,12 @@
-
+import { ButtonIcon } from '@radix-ui/react-icons';
+import Box from '../../Box/Box';
+import { Button } from '../../Button/Button';
+import Label from '../../Label/Label';
 import React, { useState } from 'react'
-import Label from '../Label/Label';
 import { IconSvg, PasswordWrapper, StyledInputPassword } from './InputPassword.styles'
 import { StyledInputWrapper } from './InputWrapper.styles';
 
-export const InputPassword = (props: any) => {
+function Input(props: any) {
 
   const [inputType, setinputType] = useState('password')
 
@@ -29,3 +31,5 @@ export const InputPassword = (props: any) => {
     </StyledInputWrapper>
   )
 }
+
+export default Input

@@ -1,6 +1,5 @@
-// import { cssFocusVisible, styled } from "../theme/stitches.config";
-
-import { styled, cssFocusVisible } from "../theme/stitches.config";
+import { cssFocusVisible, styled } from "../..theme/stitches.config";
+import { StyledDrip } from "../utils";
 
 export const StyledLabel= styled(
     'label', {

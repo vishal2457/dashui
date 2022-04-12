@@ -1,17 +1,51 @@
-import React from 'react'
-import { SwitchThumb, Flex, Label } from './Switch.styles'
+import Label from "../../Label/Label";
+import { useId } from "../../utils/hooks/useId";
+import React from "react";
+import {
+  SwitchThumb,
+  Flex,
+  StyledSwitch,
+  SwitchVariantProps,
+} from "./Switch.styles";
 
-function Switch(props: any) {
+type defaultProps = {
+  label: string;
+  id?: string;
+  labelLeft?: boolean;
+  checked: boolean;
+  onChange: (val: boolean) => void;
+  size?: string;
+};
+type propTypes = defaultProps & SwitchVariantProps;
+
+function Switch({
+  label,
+  id,
+  labelLeft,
+  checked = false,
+  onChange,
+  size,
+}: propTypes) {
+  let SwitchID = useId(id);
   return (
-    <Flex css={{ alignItems: 'center' }}>
-      <Label htmlFor="s1" css={{ paddingRight: 15 }}>
-        Airplane mode
-      </Label>
-      <Switch defaultChecked id="s1">
-        <SwitchThumb />
-      </Switch>
+    <Flex css={{ alignItems: "center" }}>
+      {labelLeft ? (
+        <Label htmlFor={SwitchID} css={{ paddingRight: 15 }} label={label} />
+      ) : null}
+      <StyledSwitch
+        size={size}
+        defaultChecked
+        id={SwitchID}
+        checked={checked}
+        onCheckedChange={onChange}
+      >
+        <SwitchThumb size={size} />
+      </StyledSwitch>
+      {!labelLeft ? (
+        <Label htmlFor={SwitchID} css={{ paddingRight: 15 }} label={label} />
+      ) : null}
     </Flex>
-  )
+  );
 }
 
-export default Switch
+export default Switch;

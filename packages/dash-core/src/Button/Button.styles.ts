@@ -1,5 +1,5 @@
-import { cssFocusVisible, styled, VariantProps } from "../theme/stitches.config";
-
+import { cssFocusVisible, styled, VariantProps } from "../..theme/stitches.config";
+import { StyledDrip } from "../utils";
 
 export const StyledButton = styled(
     'button',
@@ -24,6 +24,13 @@ export const StyledButton = styled(
       },
       '@motion': {
         transition: 'none'
+      },
+      [`& ${StyledDrip}`]: {
+        zIndex: '$1',
+        '.nextui-drip-filler': {
+          opacity: 0.25,
+          fill: '$accents2'
+        }
       },
       variants: {
         bordered: {
@@ -133,7 +140,13 @@ export const StyledButton = styled(
         },
         light: {
           true: {
-            bg: 'transparent'
+            bg: 'transparent',
+            [`& ${StyledDrip}`]: {
+              '.nextui-drip-filler': {
+                opacity: 0.8,
+                fill: '$accents2'
+              }
+            }
           }
         },
         shadow: {
@@ -471,7 +484,13 @@ export const StyledButton = styled(
           color: 'default',
           css: {
             bg: '$primaryLight',
-            color: '$primary'
+            color: '$primary',
+            [`& ${StyledDrip}`]: {
+              '.nextui-drip-filler': {
+                opacity: 0.4,
+                fill: '$primary'
+              }
+            }
           }
         },
         {
@@ -495,7 +514,13 @@ export const StyledButton = styled(
           color: 'success',
           css: {
             bg: '$successLight',
-            color: '$success'
+            color: '$success',
+            [`& ${StyledDrip}`]: {
+              '.nextui-drip-filler': {
+                opacity: 0.4,
+                fill: '$success'
+              }
+            }
           }
         },
         {
@@ -503,7 +528,13 @@ export const StyledButton = styled(
           color: 'warning',
           css: {
             bg: '$warningLight',
-            color: '$warning'
+            color: '$warning',
+            [`& ${StyledDrip}`]: {
+              '.nextui-drip-filler': {
+                opacity: 0.4,
+                fill: '$warning'
+              }
+            }
           }
         },
         {
@@ -511,7 +542,13 @@ export const StyledButton = styled(
           color: 'error',
           css: {
             bg: '$errorLight',
-            color: '$error'
+            color: '$error',
+            [`& ${StyledDrip}`]: {
+              '.nextui-drip-filler': {
+                opacity: 0.4,
+                fill: '$error'
+              }
+            }
           }
         },
         // border-weight / gradient-color / bordered

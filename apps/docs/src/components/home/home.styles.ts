@@ -1,7 +1,7 @@
-import {keyframes, styled} from "../../theme/stitches.config"
-import Box from "@ui/Box/Box"
-import { Button } from "@ui/Button/Button";
-import Text from "@ui/Text/Text";
+import {keyframes, styled} from "../..theme/stitches.config"
+import Box from "../../Box/Box"
+import { Button } from "../../Button/Button";
+import Text from "../../Text/Text";
 export const MainContainer = styled(Box, {
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",

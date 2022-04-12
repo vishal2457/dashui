@@ -1,5 +1,5 @@
-import Box from '@ui/Box/Box';
-import Text from '@ui/Text/Text';
+import Box from '../../Box/Box';
+import Text from '../../Text/Text';
 import { useTheme } from 'next-themes';
 import React from 'react';
 import { a11yDark, a11yLight, CopyBlock } from "react-code-blocks";

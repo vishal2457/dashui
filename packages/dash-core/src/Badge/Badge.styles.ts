@@ -1,5 +1,5 @@
-import { cssFocusVisible, styled } from "../theme/stitches.config";
-
+import { cssFocusVisible, styled } from "../..theme/stitches.config";
+import { StyledDrip } from "../utils";
 
 export const StyledBadge = styled(
     'span',
@@ -149,7 +149,13 @@ export const StyledBadge = styled(
         },
         light: {
           true: {
-            bg: 'transparent'
+            bg: 'transparent',
+            [`& ${StyledDrip}`]: {
+              '.nextui-drip-filler': {
+                opacity: 0.8,
+                fill: '$accents2'
+              }
+            }
           }
         },
         shadow: {
@@ -354,6 +360,11 @@ export const StyledBadge = styled(
             bg: 'transparent',
             borderColor: '$indigo9',
             color: '$indigo9',
+            [`& ${StyledDrip}`]: {
+              '.nextui-drip-filler': {
+                fill: '$indigo9'
+              }
+            }
           }
         },
         {
@@ -362,7 +373,12 @@ export const StyledBadge = styled(
           css: {
             bg: 'transparent',
             borderColor: '$primary',
-            color: '$primary'
+            color: '$primary',
+            [`& ${StyledDrip}`]: {
+              '.nextui-drip-filler': {
+                fill: '$primary'
+              }
+            }
           }
         },
         {
@@ -371,7 +387,12 @@ export const StyledBadge = styled(
           css: {
             bg: 'transparent',
             borderColor: '$secondary',
-            color: '$secondary'
+            color: '$secondary',
+            [`& ${StyledDrip}`]: {
+              '.nextui-drip-filler': {
+                fill: '$secondary'
+              }
+            }
           }
         },
         {
@@ -380,7 +401,12 @@ export const StyledBadge = styled(
           css: {
             bg: 'transparent',
             borderColor: '$success',
-            color: '$success'
+            color: '$success',
+            [`& ${StyledDrip}`]: {
+              '.nextui-drip-filler': {
+                fill: '$success'
+              }
+            }
           }
         },
         {
@@ -389,7 +415,12 @@ export const StyledBadge = styled(
           css: {
             bg: 'transparent',
             borderColor: '$warning',
-            color: '$warning'
+            color: '$warning',
+            [`& ${StyledDrip}`]: {
+              '.nextui-drip-filler': {
+                fill: '$warning'
+              }
+            }
           }
         },
         {
@@ -398,7 +429,12 @@ export const StyledBadge = styled(
           css: {
             bg: 'transparent',
             borderColor: '$error',
-            color: '$error'
+            color: '$error',
+            [`& ${StyledDrip}`]: {
+              '.nextui-drip-filler': {
+                fill: '$error'
+              }
+            }
           }
         },
         {
@@ -412,7 +448,12 @@ export const StyledBadge = styled(
             borderColor: '$primary',
             backgroundImage:
               'linear-gradient($background, $background), $gradient',
-            border: 'none'
+            border: 'none',
+            [`& ${StyledDrip}`]: {
+              '.nextui-drip-filler': {
+                fill: '$secondary'
+              }
+            }
           }
         },
         // ghost / color
@@ -485,7 +526,13 @@ export const StyledBadge = styled(
           color: 'default',
           css: {
             bg: '$primaryLight',
-            color: '$primary'
+            color: '$primary',
+            [`& ${StyledDrip}`]: {
+              '.nextui-drip-filler': {
+                opacity: 0.4,
+                fill: '$primary'
+              }
+            }
           }
         },
         {
@@ -493,7 +540,13 @@ export const StyledBadge = styled(
           color: 'primary',
           css: {
             bg: '$primaryLight',
-            color: '$primary'
+            color: '$primary',
+            [`& ${StyledDrip}`]: {
+              '.nextui-drip-filler': {
+                opacity: 0.4,
+                fill: '$primary'
+              }
+            }
           }
         },
         {
@@ -501,7 +554,13 @@ export const StyledBadge = styled(
           color: 'secondary',
           css: {
             bg: '$secondaryLight',
-            color: '$secondary'
+            color: '$secondary',
+            [`& ${StyledDrip}`]: {
+              '.nextui-drip-filler': {
+                opacity: 0.4,
+                fill: '$secondary'
+              }
+            }
           }
         },
         {
@@ -509,7 +568,13 @@ export const StyledBadge = styled(
           color: 'success',
           css: {
             bg: '$successLight',
-            color: '$success'
+            color: '$success',
+            [`& ${StyledDrip}`]: {
+              '.nextui-drip-filler': {
+                opacity: 0.4,
+                fill: '$success'
+              }
+            }
           }
         },
         {
@@ -517,7 +582,13 @@ export const StyledBadge = styled(
           color: 'warning',
           css: {
             bg: '$warningLight',
-            color: '$warning'
+            color: '$warning',
+            [`& ${StyledDrip}`]: {
+              '.nextui-drip-filler': {
+                opacity: 0.4,
+                fill: '$warning'
+              }
+            }
           }
         },
         {
@@ -525,7 +596,13 @@ export const StyledBadge = styled(
           color: 'error',
           css: {
             bg: '$errorLight',
-            color: '$error'
+            color: '$error',
+            [`& ${StyledDrip}`]: {
+              '.nextui-drip-filler': {
+                opacity: 0.4,
+                fill: '$error'
+              }
+            }
           }
         },
         // border-weight / gradient-color / bordered

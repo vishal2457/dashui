@@ -1,12 +1,9 @@
-import Box from "@ui/Box/Box";
-import { Button } from "@ui/Button/Button";
-import Group from "@ui/Group/Group";
-import Spacer from "@ui/Spacer/Spacer";
-import Text from "@ui/Text/Text";
-import Layout from "components/Layout/Layout";
-import InitContent from "components/Shared/InitContent";
-import PropsInfo from "components/Shared/PropsInfo";
+
+import Layout from "../..components/Layout/Layout";
+import PropsInfo from "../..components/Shared/PropsInfo";
 import React, { Fragment } from "react";
+import InitContent from "../..components/Shared/InitContent";
+import { Button } from "@dash/core";
 
 let propsData = [
   {
@@ -47,7 +44,7 @@ function ButtonComponent() {
       <InitContent
         title="Button"
         shortDesc="used to perform action in an application by user."
-        importS="import { Button } from '@ui/Button/Button'"
+        importS="import { Button } from '../../Button/Button'"
         code={`
  <Button>
  <Text>Default</Text>
@@ -55,24 +52,9 @@ function ButtonComponent() {
         `}
       >
         <Fragment>
-          <Button>
-            <Text>Default</Text>
-          </Button>
-          <Button bordered>
-            <Text>Bordered</Text>
-          </Button>
-          <Button disabled>
-            <Text>Disabled</Text>
-          </Button>
-          <Button color="error">
-            <Text space="xl">Error</Text>
-          </Button>
-          <Button loading>
-            <Text space="xl">Loading</Text>
-          </Button>
+         <Button>check</Button>
         </Fragment>
       </InitContent>
-      <Spacer y={10} />
       <PropsInfo info={propsData} />
     </Layout>
   );

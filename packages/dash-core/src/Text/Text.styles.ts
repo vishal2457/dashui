@@ -1,4 +1,4 @@
-import { cssFocusVisible, styled, VariantProps } from "../theme/stitches.config";
+import { cssFocusVisible, styled, VariantProps } from "../..theme/stitches.config";
 
 export const StyledText = styled(
     'p', {

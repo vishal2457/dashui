@@ -23,10 +23,10 @@ const slideUpAndFade = keyframes({
   });
   
   const StyledContent = styled(DropdownMenuPrimitive.Content, {
-    minWidth: 220,
+    minWidth: 180,
     backgroundColor: "$bg1",
     borderRadius: 6,
-    padding: 5,
+    padding: '$5',
     boxShadow:
       '0px 10px 38px -10px rgba(22, 23, 24, 0.35), 0px 10px 20px -15px rgba(22, 23, 24, 0.2)',
     '@media (prefers-reduced-motion: no-preference)': {
@@ -54,7 +54,7 @@ const slideUpAndFade = keyframes({
     height: 25,
     padding: '0 5px',
     position: 'relative',
-    paddingLeft: 25,
+    paddingLeft: "$5",
     userSelect: 'none',
   
     '&[data-disabled]': {
@@ -104,6 +104,12 @@ const slideUpAndFade = keyframes({
   
   const StyledArrow = styled(DropdownMenuPrimitive.Arrow, {
     fill: "$bg1",
+  });
+
+  export const RightSlot = styled('div', {
+    marginLeft: 'auto',
+    paddingLeft: 20,
+    ':focus > &': { color: 'white' },
   });
 
 

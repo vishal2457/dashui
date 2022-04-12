@@ -1,4 +1,4 @@
-import Text from '@ui/Text/Text'
+import Text from '../../Text/Text'
 import React from 'react'
 
 function LeadText({children}:any) {

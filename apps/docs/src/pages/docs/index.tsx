@@ -1,21 +1,21 @@
 import React from "react";
-import Text from "@ui/Text/Text";
-import Box from "@ui/Box/Box";
-import { RadioGroup } from "@ui/Radio";
-import Radio from "@ui/Radio/Radio";
+import Text from "../../Text/Text";
+import Box from "../../Box/Box";
+import { RadioGroup } from "../../Radio";
+import Radio from "../../Radio/Radio";
 import DisplayCode from "components/DisplayCode";
-import Checkbox from "@ui/Checkbox/Checkbox";
+import Checkbox from "../../Checkbox/Checkbox";
 import LeadText from "components/LeadText";
 import BaseContainer from "components/BaseContainer";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@ui/Tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "../../Tabs";
 import CustomTabList from "components/CustomTabList";
-import DropdownStyled from "@ui/Dropdown/Dropdown";
+import DropdownStyled from "../../Dropdown/Dropdown";
 import { ACTIONS } from "extras/static-data";
 import { styled } from "theme/stitches.config";
-import Input from "@ui/Input/Input";
+import Input from "../../Input/Input";
 import { useTheme } from "next-themes";
-import { Button } from "@ui/Button/Button";
-import { Dialog, DialogClose, DialogContent, DialogTrigger } from "@ui/Dialog";
+import { Button } from "../../Button/Button";
+import { Dialog, DialogClose, DialogContent, DialogTrigger } from "../../Dialog";
 import Layout from "components/Layout/Layout";
 
 export const TriggerButton = styled("button", {

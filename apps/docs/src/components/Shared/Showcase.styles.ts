@@ -1,4 +1,4 @@
-import Group from "@ui/Group/Group";
+import Group from "../../Group/Group";
 import { styled } from "theme/stitches.config";
 
 //showcase component

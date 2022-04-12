@@ -1,7 +1,7 @@
 import { SunIcon, MoonIcon } from "@radix-ui/react-icons";
-import Box from "@ui/Box/Box";
-import { Button } from "@ui/Button/Button";
-import Text from "@ui/Text/Text";
+import Box from "../../Box/Box";
+import { Button } from "../../Button/Button";
+import Text from "../../Text/Text";
 import { useTheme } from "next-themes";
 import React from "react";
 import { HeaderContainer, IconButton } from "./Header.styles";

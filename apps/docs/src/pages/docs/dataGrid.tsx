@@ -1,5 +1,5 @@
-import Datagrid from "@ui/DataGrid/DataGrid";
-import Spacer from "@ui/Spacer/Spacer";
+import Datagrid from "../../DataGrid/DataGrid";
+import Spacer from "../../Spacer/Spacer";
 import Layout from "components/Layout/Layout";
 import InitContent from "components/Shared/InitContent";
 import React, { Fragment } from "react";
@@ -10,7 +10,7 @@ function DataGridComponent() {
       <InitContent
         title="Datagrid"
         shortDesc="used to render huge lists of data."
-        importS="import Datagrid from '@ui/DataGrid/DataGrid'"
+        importS="import Datagrid from '../../DataGrid/DataGrid'"
         code={`
  <Datagrid />
         `}

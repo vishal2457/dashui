@@ -13,18 +13,19 @@ export type SingleItemType = { name: string; id: string | number; icon?: any }
 type propTypes = {
   arr: SingleItemType[];
   trigger: React.ReactNode;
-  onSelect: (id: string | number, index: number) => void;
-  triggerProps?: any
+  onSelect: (item: SingleItemType, index: number) => void;
+  triggerProps?: any,
+  align?: "start"|"end"|"center"
 };
 
-function DropdownStyled({ arr, onSelect, trigger, triggerProps }: propTypes) {
+function DropdownStyled({ arr, onSelect, trigger, triggerProps, align="center" }: propTypes) {
   return (
     <DropdownMenu>
       <DropdownTrigger 
       triggerProps={triggerProps}
       trigger={trigger}
       />
-      <DropdownMenuContent sideOffset={5}>
+      <DropdownMenuContent sideOffset={5} align={align}>
         {arr.map((item, index) => {
           return (
             <SingleItem

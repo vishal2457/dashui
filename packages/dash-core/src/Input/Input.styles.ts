@@ -1,5 +1,4 @@
-import { cssFocusVisible, styled } from "../theme/stitches.config";
-
+import { cssFocusVisible, styled, VariantProps } from "../..theme/stitches.config";
 
 export const StyledInput = styled(
     'input', {
@@ -12,50 +11,38 @@ export const StyledInput = styled(
       variants: {
         size: {
           xs: {
-            $$buttonPadding: '$space$3',
-            px: '$3',
-            height: '$10',
-            lh: '$space$10',
+            height: '$9',
+            p: "$2",
             width: 'auto',
             minWidth: '$20',
             fontSize: '$tiny',
             br: '$xs'
           },
           sm: {
-            $$buttonPadding: '$space$5',
-            px: '$5',
             height: '$11',
-            lh: '$space$12',
             width: 'auto',
+            p: "$3",
             minWidth: '$36',
             fontSize: '$xs',
             br: '$sm'
           },
           md: {
-            $$buttonPadding: '$space$7',
-            px: '$7',
             height: '$14',
-            lh: '$space$14',
             width: 'auto',
             minWidth: '$48',
             fontSize: '$xs',
             br: '$md'
           },
           lg: {
-            $$buttonPadding: '$space$9',
-            px: '$9',
+     
             height: '$15',
-            lh: '$space$15',
             width: 'auto',
             minWidth: '$60',
             fontSize: '$base',
             br: '$base'
           },
           xl: {
-            $$buttonPadding: '$space$10',
-            px: '$10',
             height: '$17',
-            lh: '$space$17',
             width: 'auto',
             minWidth: '$72',
             fontSize: '$sm',
@@ -96,11 +83,10 @@ export const StyledInput = styled(
       },
       defaultVariants: {
         color: 'default',
-        // weight: 'normal',
-        // style: 'normal',
         size: 'sm',
       }
     },
     cssFocusVisible
   );
   
+export type InputVariantsProps = VariantProps<typeof StyledInput>;

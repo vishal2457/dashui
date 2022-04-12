@@ -1,5 +1,5 @@
-import { cssFocusVisible, styled } from "../theme/stitches.config";
-
+import { cssFocusVisible, styled } from "../..theme/stitches.config";
+import { StyledDrip } from "../utils";
 
 export const StyledBox = styled(
     'div', {

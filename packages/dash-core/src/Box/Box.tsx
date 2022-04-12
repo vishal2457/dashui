@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyledBox } from './Box.styles'
 
-export const Box = (props: any) => {
+function Box(props: any) {
   return (
     <StyledBox {...props} >
       {props.children}
