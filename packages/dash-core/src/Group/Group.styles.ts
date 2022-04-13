@@ -1,4 +1,4 @@
-import { styled, VariantProps } from "theme/stitches.config";
+import { styled, VariantProps } from "../theme";
 
 export const GroupBox = styled("div", {
   display: "flex",

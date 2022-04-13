@@ -1,4 +1,4 @@
-import { styled } from "App/theme/stitches.config";
+import { cssFocusVisible, styled } from "../theme";
 import ReactPaginate from "react-paginate";
 
 export const GridContainer = styled("div", {

@@ -1,6 +1,6 @@
 import { blackA } from '@radix-ui/colors';
 import * as SwitchPrimitive from '@radix-ui/react-switch';
-import { styled, VariantProps } from 'theme/stitches.config';
+import { styled, VariantProps } from '../theme';
 
 export const StyledSwitch = styled(SwitchPrimitive.Root, {
   all: 'unset',

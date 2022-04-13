@@ -1,6 +1,6 @@
-import Label from "../../Label/Label";
-import { useId } from "../../utils/hooks/useId";
+import { useId } from "@dash/utils";
 import React from "react";
+import Label from "../Label/Label";
 import {
   SwitchThumb,
   Flex,

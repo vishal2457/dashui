@@ -1,5 +1,5 @@
-import Box from '../../Box/Box';
-import Text from '../../Text/Text';
+
+import { Box, Text } from '@dash/core';
 import { useTheme } from 'next-themes';
 import React from 'react';
 import { a11yDark, a11yLight, CopyBlock } from "react-code-blocks";

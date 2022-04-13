@@ -1,5 +1,5 @@
-import { Button } from "../../Button/Button";
-import { styled } from "theme/stitches.config";
+import { Button, styled } from "@dash/core";
+
 
 
 export const HeaderContainer = styled('div', {

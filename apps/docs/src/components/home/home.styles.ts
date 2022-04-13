@@ -1,7 +1,5 @@
-import {keyframes, styled} from "../..theme/stitches.config"
-import Box from "../../Box/Box"
-import { Button } from "../../Button/Button";
-import Text from "../../Text/Text";
+import { Box, Button, keyframes, styled, Text } from "@dash/core";
+
 export const MainContainer = styled(Box, {
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",

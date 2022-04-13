@@ -1,4 +1,4 @@
-import { keyframes, styled } from "../theme/stitches.config";
+import { keyframes, styled } from "./theme";
 
 const expand = keyframes({
     '0%': {

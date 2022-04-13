@@ -1,9 +1,7 @@
-import Box from "../../Box/Box";
-import Spacer from "../../Spacer/Spacer";
-import Text from "../../Text/Text";
+
 import React from "react";
-import { styled } from "theme/stitches.config";
 import { Code } from "./Code.styles";
+import { Box, Spacer, styled, Text } from "@dash/core";
 
 const Table = styled("table", {
   width: "100%",

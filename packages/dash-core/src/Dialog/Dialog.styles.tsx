@@ -1,7 +1,7 @@
 import React from 'react';
-import { styled, keyframes } from '@stitches/react';
 import * as DialogPrimitive from '@radix-ui/react-dialog';
 import { blackA } from '@radix-ui/colors';
+import { keyframes, styled } from '../theme';
 
 const overlayShow = keyframes({
   '0%': { opacity: 0 },

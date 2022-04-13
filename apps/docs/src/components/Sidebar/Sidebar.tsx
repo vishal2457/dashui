@@ -9,8 +9,8 @@ import {
   ParentContainer,
   ParentElement,
 } from "./Sidebar.styles";
-import Text from "../../Text/Text";
 import { ArrowDownIcon } from "@radix-ui/react-icons";
+import { Text } from "@dash/core";
 
 
 export type SidebarProps = {

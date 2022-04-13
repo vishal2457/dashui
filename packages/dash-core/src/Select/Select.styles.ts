@@ -1,6 +1,6 @@
 import { mauve } from '@radix-ui/colors';
 import * as SelectPrimitive from '@radix-ui/react-select';
-import { styled } from "../..theme/stitches.config";
+import { styled } from '../theme';
 
 
 const StyledSelect = styled(SelectPrimitive.Root, {

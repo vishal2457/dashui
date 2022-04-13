@@ -1,5 +1,5 @@
-import { cssFocusVisible, styled } from "../..theme/stitches.config";
-import { StyledDrip } from "../utils";
+import { styled, cssFocusVisible } from "../theme";
+
 
 export const StyledTextarea = styled(
     'textarea', {

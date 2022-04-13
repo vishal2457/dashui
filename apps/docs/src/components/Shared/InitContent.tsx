@@ -1,9 +1,8 @@
-import Box from "../../Box/Box";
-import Spacer from "../../Spacer/Spacer";
-import Text from "../../Text/Text";
-import DisplayCode from "components/DisplayCode";
+
 import React from "react";
 import { Showcase } from "./Showcase.styles";
+import { Text, Box, Spacer } from "@dash/core";
+import DisplayCode from "../DisplayCode";
 
 type props = {
   title: string;

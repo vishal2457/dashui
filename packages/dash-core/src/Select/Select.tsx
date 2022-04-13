@@ -1,12 +1,7 @@
 import React from "react";
 import {
   SelectContent,
-  SelectGroup,
   SelectIcon,
-  SelectItem,
-  SelectItemIndicator,
-  SelectItemText,
-  SelectLabel,
   SelectScrollDownButton,
   SelectScrollUpButton,
   SelectTrigger,

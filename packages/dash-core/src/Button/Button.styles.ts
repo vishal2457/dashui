@@ -1,4 +1,4 @@
-import { cssFocusVisible, styled, VariantProps } from "../..theme/stitches.config";
+import { cssFocusVisible, styled, VariantProps } from "../theme";
 import { StyledDrip } from "../utils";
 
 export const StyledButton = styled(

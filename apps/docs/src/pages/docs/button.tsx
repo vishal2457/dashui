@@ -1,9 +1,9 @@
 
-import Layout from "../..components/Layout/Layout";
-import PropsInfo from "../..components/Shared/PropsInfo";
 import React, { Fragment } from "react";
-import InitContent from "../..components/Shared/InitContent";
 import { Button } from "@dash/core";
+import Layout from "../../components/Layout/Layout";
+import InitContent from "../../components/Shared/InitContent";
+import PropsInfo from "../../components/Shared/PropsInfo";
 
 let propsData = [
   {

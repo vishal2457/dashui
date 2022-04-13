@@ -1,5 +1,4 @@
-import { cssFocusVisible, styled } from "../..theme/stitches.config";
-import { StyledDrip } from "../utils";
+import { styled, cssFocusVisible, VariantProps } from "../theme";
 
 export const StyledInputPassword = styled(
     'input', {
@@ -119,4 +118,7 @@ export const IconSvg = styled('svg', {
   top: '50%',
   marginTop: -8,
   // bottom: 10,
-})
+});
+
+
+export type InputPasswordVariantsProps = VariantProps<typeof StyledInputPassword>;

@@ -1,4 +1,4 @@
-import { useId } from "../../utils/hooks/useId";
+import { useId } from "@dash/utils";
 import React from "react";
 import Box from "../Box/Box";
 import Label from "../Label/Label";
@@ -6,7 +6,7 @@ import {  RadioVariantsProps, RadioGroupRadio, RadioGroupIndicator } from "./Rad
 
 interface Props {
   checked?: boolean;
-  value?: string | number;
+  value: string;
   disabled?: boolean;
   preventDefault?: boolean;
   // onChange?: (e: RadioEvent) => void;

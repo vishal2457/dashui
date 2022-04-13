@@ -1,5 +1,5 @@
 import * as LabelPrimitive from "@radix-ui/react-label";
-import { styled, VariantProps } from "../..theme/stitches.config";
+import { styled, VariantProps } from "../theme";
 
 export const StyledLabel = styled(LabelPrimitive.Root, {
   userSelect: "none",

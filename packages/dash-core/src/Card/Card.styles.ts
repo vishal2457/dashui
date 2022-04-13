@@ -1,4 +1,4 @@
-import { styled } from "../..theme/stitches.config";
+import { cssFocusVisible, styled } from "../theme";
 
 
 export const StyledCard = styled('div', {

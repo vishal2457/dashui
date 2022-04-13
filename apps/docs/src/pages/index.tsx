@@ -1,14 +1,33 @@
-import { Button } from "@dash/core";
-import { useIsomorphicLayoutEffect } from "@dash/utils";
 
-export default function Docs() {
-  useIsomorphicLayoutEffect(() => {
-    console.log("dash docs page");
-  }, []);
+import React from "react";
+import styles from "../components/home/home.module.css";
+import { useRouter } from "next/router";
+import { Box, Text } from "@dash/core";
+import { CenterContainer, MainContainer } from "../components/home/home.styles";
+
+function Home() {
+  const router = useRouter();
   return (
-    <div>
-      <h1>dash Documentation</h1>
-      <Button>Click me!</Button>
-    </div>
+    <Box>
+      <MainContainer className={styles.mainContainer}>
+        <CenterContainer>
+          <Text className="text" size="h1">
+            dash-ui
+          </Text>
+          <Text color="white" size="h3">
+            React components build with stitches css and radix-ui.
+          </Text>
+          <Box css={{mt: "$10"}}>
+          <button className="button pointer" onClick={() => router.push("/docs")} >
+            <span>get started</span>
+            <div className="liquid"></div>
+          </button>
+          </Box>
+          {" "}
+        </CenterContainer>
+      </MainContainer>
+    </Box>
   );
 }
+
+export default Home;

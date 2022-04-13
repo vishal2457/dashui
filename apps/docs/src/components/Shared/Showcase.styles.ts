@@ -1,5 +1,5 @@
-import Group from "../../Group/Group";
-import { styled } from "theme/stitches.config";
+import { styled, Group } from "@dash/core";
+
 
 //showcase component
 export const Showcase = styled(Group, {

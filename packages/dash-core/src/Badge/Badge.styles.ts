@@ -1,4 +1,4 @@
-import { cssFocusVisible, styled } from "../..theme/stitches.config";
+import { cssFocusVisible, styled } from "../theme";
 import { StyledDrip } from "../utils";
 
 export const StyledBadge = styled(
